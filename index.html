@@ -11,17 +11,17 @@
         <h1>Transactions</h1>
         <form id="transaction-form" action="/" method="post">
             <label for="category">Category:</label>
-            <select name="category" id="category">
+            <select name="category" id="category" required>
                 <option value="">Select</option>
                 <option value="Credit">Credit</option>
                 <option value="Debit">Debit</option>
             </select>
             <label for="amount">Amount:</label>
-            <input type="number" name="amount" id="amount" placeholder="Enter amount">
+            <input type="number" name="amount" id="amount" placeholder="Enter amount" required>
             <label for="remark">Remark:</label>
-            <input type="text" name="remark" id="remark" placeholder="Remark">
+            <input type="text" name="remark" id="remark" placeholder="Remark" required>
             <label for="date">Date:</label>
-            <input type="date" name="date" id="date">
+            <input type="date" name="date" id="date" required>
             <input type="submit" value="Submit" id="submit">
         </form>
 
